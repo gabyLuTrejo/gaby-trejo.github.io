@@ -1,6 +1,6 @@
 /*///////// Desktop //////////*/
 
-header { margin-bottom: 15%; }
+#nav-lang-mobile{ display: none; }
 #nav-mobile{ display: none; }
 
 header nav ul>li>.language {
@@ -43,6 +43,11 @@ nav .brand-logo { padding-left: 2%; }
     color: #000;
 }
 
+.engineer>p, .coder-content>p, .vle-design>p {
+    text-align: justify;
+    padding: 0 5%;
+}
+
 .engineer { left: 0; }
 .vle-design { right: 0; }
 
@@ -75,7 +80,6 @@ nav .brand-logo { padding-left: 2%; }
 }
 
 .col img {
-    display: block;
     position: relative;
     z-index: -1;
     max-width: 100%;
@@ -109,7 +113,16 @@ footer.page-footer {
 /*///////// RESPONSIVE 480-mobile //////////*/
 
 @media (max-width : 480px){
+/*    header { margin-bottom: 15%; }*/
     #nav-desktop{ display: none; }
+    #nav-lang-mobile{ 
+        display: block;
+        background-color: transparent;
+        color: blueviolet;
+        box-shadow: 0 0 0;
+        padding-left: 5%;
+        z-index: 35;
+    }
     #nav-mobile{ display: block; z-index: 35;}
     .home-section { margin-top: 20vh; }
       

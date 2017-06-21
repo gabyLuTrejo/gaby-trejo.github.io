@@ -10,7 +10,25 @@ var cargarPagina = function() {
         $('.open').removeClass('oppenned');
         event.stopPropagation();
     });
+    
+    $(".project-card").click(openCard);
+    
+    /*page('/', home);
+    page('/about', about);
+    page('/skills', skills);
+    page('/portfolio', portfolio);
+    page('/contact', contact);
+    page();*/
 };
+
+function openCard(){
+    var $idCard = $(this).data("id");
+    $("#"+ $idCard).removeClass("hide");
+}
+
+/*function about(){
+    $("#about").removeClass("hide");
+}*/
 
 
 $(document).ready(cargarPagina);

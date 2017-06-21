@@ -11,6 +11,8 @@ var cargarPagina = function() {
         event.stopPropagation();
     });
     
+    $(".project-card").click(openCard);
+    
     /*page('/', home);
     page('/about', about);
     page('/skills', skills);
@@ -18,6 +20,11 @@ var cargarPagina = function() {
     page('/contact', contact);
     page();*/
 };
+
+function openCard(){
+    var $idCard = $(this).data("id");
+    $("#"+ $idCard).removeClass("hide");
+}
 
 /*function about(){
     $("#about").removeClass("hide");

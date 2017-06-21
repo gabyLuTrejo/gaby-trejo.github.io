@@ -1,26 +1,32 @@
-var traducciones = {
+var translations = {
   es: {
     translation: {
-      "saludo": "Hola mundo",
-      "perfil": "Desarrolladora Front End"
+      "nav-skills": "Habilidades",
+      "nav-portfolio": "Portafolio",
+      "nav-contact": "Contacto"
     }
   },
   en: {
     translation: {
-      "saludo": "Hello world",
-      "perfil": "Front End Developer"
+      "nav-skills": "Skills",
+      "nav-portfolio": "Portfolio",
+      "nav-contact": "Contact"
     }
   }
 };
 
 
-var textos = [
+var texts = [
   {
-    id: "output",
-    key: "saludo"
+    id: "nav-skills",
+    key: "nav-skills"
   },
   {
-    id: "perfil",
-    key: "perfil"
+    id: "nav-portfolio",
+    key: "nav-portfolio"
+  },
+  {
+    id: "nav-contact",
+    key: "nav-contact"
   }
 ];

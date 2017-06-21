@@ -1,14 +1,14 @@
 i18next.init({
   lng: 'es',
   debug: true,
-  resources: traducciones
+  resources: translations
 }, function(err, t) {
   // init set content
   updateContent();
 });
 
 function updateContent() {
-  traducir(textos);
+  translate(texts);
 }
 
 function changeLng(lng) {
@@ -19,18 +19,18 @@ i18next.on('languageChanged', () => {
   updateContent();
 });
 
-var cambiarIdioma = function (e) {
-  var idioma = e.target.id;
-  i18next.changeLanguage(idioma);
+var lngChange = function (e) {
+  var language = e.target.id;
+  i18next.changeLanguage(language);
 }
 
-var botonIdioma = document.querySelectorAll('.boton-idioma');
-botonIdioma.forEach(function (boton) {
-  boton.addEventListener('click', cambiarIdioma);
+var selectLng = document.querySelectorAll('.changing-language');
+selectLng.forEach(function (button) {
+  button.addEventListener('click', lngChange);
 });
 
-function traducir(textos) {
-  textos.forEach(function (texto) {
-    document.getElementById(texto.id).innerHTML = i18next.t(texto.key);
+function translate(texts) {
+  texts.forEach(function (text) {
+    document.getElementById(text.id).innerHTML = i18next.t(text.key);
   })
 }

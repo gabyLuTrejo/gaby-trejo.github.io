@@ -1,11 +1,48 @@
 #nav-mobile{ display: none; }
 
+.home-section{
+    width: 100%;
+    position: relative;
+}
+
+.home-section.engineer, .home-section.coder, .home-section.vle-design {
+    position: absolute;
+    width: 40%;
+    display: block;
+    z-index: 10;
+    height: 15%;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+}
+
+.engineer>a, .coder>a, .vle-design>a {
+    text-decoration: none;
+    color: #000;
+}
+
+.engineer { left: 0; }
+.coder{
+    top: 2vh;
+}
+
+.vle-design { right: 0; }
+
+/*// MY IMG //*/
+.home-section.img_me {
+    display: block;
+    margin: 0px;
+}
 
 /*///////// NAVBAR RESPONSIVE //////////*/
 
 @media (max-width : 480px){
     #nav-desktop{ display: none; }
     #nav-mobile{ display: block; }
+    
+    .engineer>a, .coder>a, .vle-design>a {
+    color: #fff;
+}
     
     html{
         box-sizing: border-box;

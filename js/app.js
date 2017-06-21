@@ -10,7 +10,18 @@ var cargarPagina = function() {
         $('.open').removeClass('oppenned');
         event.stopPropagation();
     });
+    
+    /*page('/', home);
+    page('/about', about);
+    page('/skills', skills);
+    page('/portfolio', portfolio);
+    page('/contact', contact);
+    page();*/
 };
+
+/*function about(){
+    $("#about").removeClass("hide");
+}*/
 
 
 $(document).ready(cargarPagina);

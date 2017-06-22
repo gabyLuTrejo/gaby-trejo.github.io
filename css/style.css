@@ -1,6 +1,26 @@
 /*///////// Desktop //////////*/
 
+#nav-lang-mobile{ display: none; }
 #nav-mobile{ display: none; }
+
+header nav ul>li>.language {
+    display: inline-block;
+    padding: 0;
+}
+
+header nav ul>li>a.language:hover {
+    color: darksalmon;
+}
+
+header nav ul>li.language-conteiner {
+    padding-right: 24px;
+}
+
+nav .brand-logo { padding-left: 2%; }
+
+#home, #about, #skills, #portfolio, #contact {
+        margin-top: 5vh;
+}
 
 .home-section{
     width: 100%;
@@ -23,11 +43,12 @@
     color: #000;
 }
 
-.engineer { left: 0; }
-.coder{
-    top: 2vh;
+.engineer>p, .coder-content>p, .vle-design>p {
+    text-align: justify;
+    padding: 0 5%;
 }
 
+.engineer { left: 0; }
 .vle-design { right: 0; }
 
 /*// MY IMG //*/
@@ -59,7 +80,6 @@
 }
 
 .col img {
-    display: block;
     position: relative;
     z-index: -1;
     max-width: 100%;
@@ -74,6 +94,14 @@ footer.page-footer {
     padding: 0;
 }
 
+/*///////// RESPONSIVE 992 //////////*/
+@media (max-width: 992px){
+    header>nav>div>.brand-logo {
+        left: 20%;
+    }
+}
+
+
 /*///////// RESPONSIVE 768-tablet //////////*/
 
 @media (max-width : 768px){
@@ -85,7 +113,16 @@ footer.page-footer {
 /*///////// RESPONSIVE 480-mobile //////////*/
 
 @media (max-width : 480px){
+/*    header { margin-bottom: 15%; }*/
     #nav-desktop{ display: none; }
+    #nav-lang-mobile{ 
+        display: block;
+        background-color: transparent;
+        color: blueviolet;
+        box-shadow: 0 0 0;
+        padding-left: 5%;
+        z-index: 35;
+    }
     #nav-mobile{ display: block; z-index: 35;}
     .home-section { margin-top: 20vh; }
       
@@ -118,7 +155,7 @@ footer.page-footer {
     
     .open{
         position: fixed;
-        top: 40px;
+        top: 5px;
         right: 40px;
         width: 50px;
         height: 50px;
@@ -131,7 +168,7 @@ footer.page-footer {
         opacity: 0.8;
     }
 
-    span{
+    .span-nav{
         display: block;
         float: left;
         clear: both;
@@ -146,14 +183,14 @@ footer.page-footer {
         transition: all 0.4s ease;		
     }
 
-    span:nth-child(1){
+    .span-nav:nth-child(1){
         margin-top: 10px;
         z-index: 21;
     }
-    span:nth-child(2){
+    .span-nav:nth-child(2){
         margin-top: 25px;
     }
-    span:nth-child(3){
+    .span-nav:nth-child(3){
         margin-top: 40px;
     }
 

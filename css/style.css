@@ -113,6 +113,14 @@ nav .logo { width: 30%; }
 
 #about h5 { line-height: 1.4; }
 
+#portfolio>div >article.card {
+    box-shadow: none;
+}
+
+.card-title + p {
+    color: #000;
+}
+
 footer.page-footer {
     z-index: 2;
     display: grid;

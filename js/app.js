@@ -11,7 +11,7 @@ var cargarPagina = function() {
         event.stopPropagation();
     });
     
-    $(".project-card").click(openCard);
+//    $(".project-card").click(openCard);
     
     /*page('/', home);
     page('/about', about);

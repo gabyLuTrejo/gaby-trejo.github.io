@@ -18,8 +18,10 @@ header nav ul>li.language-conteiner {
 
 nav .brand-logo { padding-left: 2%; }
 
-#home, #about, #skills, #portfolio, #contact {
-        margin-top: 5vh;
+#home{
+/*, #about, #skills, #portfolio, #contact {*/
+/*    margin-top: 5vh;*/
+    height: 100vh;
 }
 
 .home-section{
@@ -86,9 +88,28 @@ nav .brand-logo { padding-left: 2%; }
     height: auto;
 }
 
+#about {
+    background-image: url(../img/london.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    height: 100vh;
+    padding-top: 15vh;
+}
+
+#about .frame {
+    border: 1rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+#about h5 { line-height: 1.4; }
+
 footer.page-footer {
+    z-index: 2;
     display: grid;
-    position: fixed;
+/*    position: fixed;*/
     bottom: 0;
     width: 100%;
     padding: 0;
@@ -105,9 +126,9 @@ footer.page-footer {
 /*///////// RESPONSIVE 768-tablet //////////*/
 
 @media (max-width : 768px){
-    h4 {
-        font-size: 2rem;
-    }
+    h4 { font-size: 2rem; }
+    #about { background-position: left;}
+    #about h5 { line-height: 1.2; }
 }
 
 /*///////// RESPONSIVE 480-mobile //////////*/
@@ -124,7 +145,6 @@ footer.page-footer {
         z-index: 35;
     }
     #nav-mobile{ display: block; z-index: 35;}
-    .home-section { margin-top: 20vh; }
       
     html{
         box-sizing: border-box;
@@ -322,4 +342,13 @@ footer.page-footer {
     }
     
     .engineer, .vle-design, .coder-content { display: none;}
+    
+    #about {
+        background-position: right;
+        padding-top: 25vh;
+        color: black;
+    }
+    #about .frame { background-color: rgba(255, 255, 255, 0.66) }
+    .frame h3{ font-size: 2.4rem; }
+    .frame h5{ font-size: 1.4rem; line-height: 2.5rem; }
 }

@@ -10,7 +10,7 @@
 	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
+    <header class="navbar-fixed">
         <nav id="nav-desktop">
             <div class="nav-wrapper grey darken-3">
             <a href="/" class="brand-logo">Logo</a>
@@ -21,7 +21,7 @@
                 <li><a id="nav-contact" href="/contact"></a></li>
                 <li class="language-conteiner">
                     <i class="large material-icons language">language</i>
-                    <a id="es" class="language changing-language" href="#">es</a>/ <a id="en" class="language changing-language" href="#">en</a>
+                    <a id="es" class="language changing-language">es</a> / <a id="en" class="language changing-language" >en</a>
                 </li>
                 </ul>
             </div>
@@ -30,7 +30,7 @@
             <ul>
                 <li class="language-conteiner">
                     <i class="large material-icons language">language</i>
-                    <a id="es" class="language changing-language" href="#">es</a>/ <a id="en" class="language changing-language" href="#">en</a>
+                    <a id="es" class="language changing-language">es</a> / <a id="en" class="language changing-language">en</a>
                 </li>
             </ul>
         </nav>
@@ -59,7 +59,7 @@
                     <a href=""><h4>Coder</h4></a>
                     <p id="content-coder"></p>
                 </div>
-                <img class="img_me responsive-img" src="https://dummyimage.com/600x400/5c215c/fff" alt="Gaby">
+                <img class="img_me responsive-img" src="img/gaby_coder.png" alt="Gaby">
             </div>
             <div class="col m3 vle-design">
                 <a href=""><h4 id="title-vle"></h4></a>
@@ -70,7 +70,12 @@
         </div>
     </section> <!-- Foto con detalles-->
     <section id="about">
-        <div class="row"></div>
+        <div class="row">
+            <div class="frame col offset-s1 s10 offset-m5 m6 center-align">
+                <h3 id="title-about"></h3>
+                <h5 id="content-about"></h5>
+            </div>
+        </div>
     </section>
     <section id="skills">  <!-- Fotos dobles con detalles-->
         <h4 class="center-align">Skills:</h4>

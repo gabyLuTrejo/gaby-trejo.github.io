@@ -17,6 +17,7 @@ header nav ul>li.language-conteiner {
 }
 
 nav .brand-logo { padding-left: 2%; }
+nav .logo { width: 30%; }
 
 #home{
 /*, #about, #skills, #portfolio, #contact {*/
@@ -118,7 +119,7 @@ footer.page-footer {
 /*///////// RESPONSIVE 992 //////////*/
 @media (max-width: 992px){
     header>nav>div>.brand-logo {
-        left: 20%;
+        left: 40%;
     }
 }
 
@@ -136,6 +137,10 @@ footer.page-footer {
 @media (max-width : 480px){
 /*    header { margin-bottom: 15%; }*/
     #nav-desktop{ display: none; }
+    nav .logo { 
+        width: 95%;
+        margin-top: -5%;
+    }
     #nav-lang-mobile{ 
         display: block;
         background-color: transparent;

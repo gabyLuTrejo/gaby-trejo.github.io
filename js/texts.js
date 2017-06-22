@@ -10,7 +10,7 @@ var translations = {
       "content-coder": "Programadora Front End Junior enfocada en funcionalidad, claridad y buen diseño.",
       "content-vle": "Ambientes Virtuales y Objetos de Aprendizaje enfocados a la educación continua y cursos en línea.",
       "title-about": "¡Hola, Soy Gaby!",
-      "content-about": "Soy amante de los deportes, principalmente los acuáticos, aficionada de la lectura e interesada en las historias de esos lugares que no siempre aparecen en el mapa."
+      "content-about": "Soy amante de los deportes principalmente los acuáticos, aficionada de la lectura e interesada en las historias de esos lugares que no siempre aparecen en el mapa."
     }
   },
   en: {
@@ -82,5 +82,9 @@ var texts = [
   {
     id: "content-about",
     key: "content-about"
+  },
+  {
+    id: "title-skills",
+    key: "nav-skills"
   }
 ];

@@ -60,10 +60,16 @@ nav .logo { width: 30%; }
     margin: 0px;
 }
 
-#basic-skills, #intermediate-skills, #advanced-skills {
-    border: 2px solid green;
-    padding: 5px;
-    height: 35vh;
+#skills {
+    height: 100vh;
+}
+
+#skills .img-visual {
+    max-height: 40vh;
+}
+
+#skills .img-skill {
+    display: none;
 }
 
 .project-title{

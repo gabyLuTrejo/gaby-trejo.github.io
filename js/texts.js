@@ -15,7 +15,9 @@ var translations = {
       "info-free-love": "Replica 'pixel perfect' de sitio.",
       "info-passeante": "Proyecto movil colaborativo ganador del primer Hackaton Laboratoria.",
       "info-daventon": "Aplicación móvil inspirada en lyft.",
-      "info-cuptronic": "Proyecto escolar de un brazo robotico que decora cupcakes."
+      "info-cuptronic": "Proyecto escolar de un brazo robotico que decora cupcakes.",
+      "title-contact": "¡No olvides ponerte en contacto!",
+      "phrase": "¡Haz que suceda!"
     }
   },
   en: {
@@ -34,7 +36,9 @@ var translations = {
       "info-free-love": "Pixel perfect site replication.",
       "info-passeante": "Wining mobile project from the first Laboratoria's Hackathon.",
       "info-daventon": "Mobile app, inspired by lyft app.",
-      "info-cuptronic": "School's project of a robotic arm that decorates cupcakes."
+      "info-cuptronic": "School's project of a robotic arm that decorates cupcakes.",
+      "title-contact": "Don't forget to keep in touch!",
+      "phrase": "Make it happen!"
     }
   }
 };
@@ -128,5 +132,13 @@ var texts = [
     {
     id: "info-cuptronic",
     key: "info-cuptronic"
+  },
+  {
+    id: "title-contact",
+    key: "title-contact"
+  },
+  {
+    id: "phrase",
+    key: "phrase"
   }
 ];

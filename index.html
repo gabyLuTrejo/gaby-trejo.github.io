@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Gaby Trejo</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Courgette|Handlee" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"/>
+    <link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="navbar-fixed">
         <nav id="nav-desktop">
             <div class="nav-wrapper grey darken-3">
-            <a href="/" class="brand-logo"><img class="responsive-img logo" src="/img/logo.png"></a>
+            <a href="/" class="brand-logo"><img class="responsive-img logo" src="img/logo.png"></a>
                 <ul class="right">
                 <li><a href="/about">Gaby</a></li>
                 <li><a id="nav-skills" href="/skills"></a></li>
@@ -33,7 +35,7 @@
                     <a id="es" class="language changing-language">es</a> / <a id="en" class="language changing-language">en</a>
                 </li>
             </ul>
-            <a href="/" class="brand-logo"><img class="responsive-img logo" src="/img/logo.png"></a>
+            <a href="/" class="brand-logo"><img class="responsive-img logo" src="img/logo.png"></a>
         </nav>
         <div id="nav-mobile" class="open">
             <span class="cls span-nav"></span>
@@ -65,9 +67,7 @@
             <div class="col m3 vle-design">
                 <a href=""><h4 id="title-vle"></h4></a>
                 <p id="content-vle"></p>
-            </div>     
-           
-           
+            </div>
         </div>
     </section> <!-- Foto con detalles-->
     <section id="about">
@@ -81,17 +81,13 @@
     <section id="skills">  <!-- Fotos dobles con detalles-->
         <h3 id="title-skills" class="center-align"></h3>
         <div class="row center-align">
-            <div class="col m6 s12" id="basic-skills">
-                <img class="img-visual img-title" src="img/basic.png">
-                <img class="img-visual img-skill" src="img/basic-1.png">
+            <div class="col m6 s12" id="basic-skills" data-level="1"> 
+                <img id="basic" class="img-visual" src="img/basic.png" alt="basic Skills">
             </div>
-            <div class="col m6 s12" id="intermediate-skills">
-                <img class="img-visual img-title" src="img/intermediate.png">
-                <img class="img-visual img-skill" src="img/intermediate-1.png">
+            <div class="col m6 s12" id="intermediate-skills" data-level="2">                <img id="intermediate" class="img-visual" src="img/intermediate.png" alt="basic Skills">
             </div>
-            <div class="col m6 offset-m3 s12" id="advanced-skills">
-                <img class="img-visual img-title" src="img/advanced.png">
-                <img class="img-visual img-skill" src="img/advanced-1.png">
+            <div class="col m6 offset-m3 s12" id="advanced-skills" data-level="3">
+                <img id="advanced" class="img-visual" src="img/advanced.png">
             </div>
         </div>
     </section>
@@ -174,7 +170,18 @@
         </div>
     </section>
     <section id="contact">
-        <div class="row"></div>
+        <div class="row">
+            <h3 id="title-contact">Get in touch!</h3>
+            <div class="row">
+                <a href="https://github.com/gabyLuTrejo" target="_blank"><img class="col s3 tossing" src="img/github.png"></a>
+                <a href="#" target="_blank"><img class="col s3 tossing" src="img/linkedin.png"></a>
+                <img class="col s3 tossing" src="img/mail.png">
+                <img class="col s3 tossing" src="img/phone.png">
+            </div>
+            <div class="row">
+                <h5 id="phrase"></h5>
+            </div>
+        </div>
     </section>
     
     

@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Gaby Trejo</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Chewy|Courgette|Handlee" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"/>
+    <link rel="stylesheet" href="css/animations.css">
 	<link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
+    <header class="navbar-fixed">
         <nav id="nav-desktop">
             <div class="nav-wrapper grey darken-3">
-            <a href="/" class="brand-logo">Logo</a>
+            <a href="/" class="brand-logo"><img class="responsive-img logo" src="img/logo.png"></a>
                 <ul class="right">
                 <li><a href="/about">Gaby</a></li>
                 <li><a id="nav-skills" href="/skills"></a></li>
@@ -21,7 +23,7 @@
                 <li><a id="nav-contact" href="/contact"></a></li>
                 <li class="language-conteiner">
                     <i class="large material-icons language">language</i>
-                    <a id="es" class="language changing-language" href="#">es</a>/ <a id="en" class="language changing-language" href="#">en</a>
+                    <a id="es" class="language changing-language">es</a> / <a id="en" class="language changing-language" >en</a>
                 </li>
                 </ul>
             </div>
@@ -30,9 +32,10 @@
             <ul>
                 <li class="language-conteiner">
                     <i class="large material-icons language">language</i>
-                    <a id="es" class="language changing-language" href="#">es</a>/ <a id="en" class="language changing-language" href="#">en</a>
+                    <a id="es" class="language changing-language">es</a> / <a id="en" class="language changing-language">en</a>
                 </li>
             </ul>
+            <a href="/" class="brand-logo"><img class="responsive-img logo" src="img/logo.png"></a>
         </nav>
         <div id="nav-mobile" class="open">
             <span class="cls span-nav"></span>
@@ -59,74 +62,131 @@
                     <a href=""><h4>Coder</h4></a>
                     <p id="content-coder"></p>
                 </div>
-                <img class="img_me responsive-img" src="https://dummyimage.com/600x400/5c215c/fff" alt="Gaby">
+                <img class="img_me responsive-img" src="img/gaby_coder.png" alt="Gaby">
+                <a id="contact-me" class="waves-effect waves-light btn-large"></a>
             </div>
             <div class="col m3 vle-design">
                 <a href=""><h4 id="title-vle"></h4></a>
                 <p id="content-vle"></p>
-            </div>     
-           
-           
+            </div>
         </div>
     </section> <!-- Foto con detalles-->
     <section id="about">
-        <div class="row"></div>
+        <div class="row">
+            <div class="frame col offset-s1 s10 offset-m5 m6 center-align">
+                <h3 id="title-about"></h3>
+                <h5 id="content-about"></h5>
+            </div>
+        </div>
     </section>
     <section id="skills">  <!-- Fotos dobles con detalles-->
-        <h4 class="center-align">Skills:</h4>
-        <div class="row">
-            <div class="col m6 s12" id="basic-skills"></div>
-            <div class="col m6 s12" id="intermediate-skills"></div>
-            <div class="col m6 offset-m3 s12" id="advanced-skills"></div>
+        <h3 id="title-skills" class="center-align"></h3>
+        <div class="row center-align">
+            <div class="col m6 s12" id="basic-skills" data-level="1"> 
+                <img id="basic" class="img-visual" src="img/basic.png" alt="basic Skills">
+            </div>
+            <div class="col m6 s12" id="intermediate-skills" data-level="2">                <img id="intermediate" class="img-visual" src="img/intermediate.png" alt="basic Skills">
+            </div>
+            <div class="col m6 offset-m3 s12" id="advanced-skills" data-level="3">
+                <img id="advanced" class="img-visual" src="img/advanced.png">
+            </div>
         </div>
     </section>
     <section id="portfolio">
-        <h4 class="center-align">Projects:</h4>
+        <h4 id="title-project" class="center-align">Projects:</h4>
         <div class="row">
-            <article class="grid-element-wrap col s12 m4">
-                <div data-id="project1" href="#" class="waves-effect project-card">
-                    <img class="img_me responsive-img" src="https://dummyimage.com/600x400/5c215c/fff" alt="project">
-                    <h4 class="project-title">Project Tiltle</h4>
+            <article class="card grid-element-wrap col s12 m4">
+                <div class="card-image waves-effect project-card">
+                    <img class="activator img_me responsive-img" src="img/p1-freelancer.png" alt="project">
+                    <h4 class="activator project-title">Freelancer</h4>
                 </div>
-                <div id="project1" class="card-reveal hide">
-                    <span class="card-title grey-text text-darken-4">title<i class="material-icons right">close</i></span>
-                    <p class="">info</p>
-                    <a class="waves-effect waves-light btn">Page</a>
-                    <a class="waves-effect waves-light btn">Repo</a>
-                </div>
-            </article>
-            <article class="grid-element-wrap col s12 m4">
-                <div data-id="project2" href="#" class="waves-effect project-card">
-                    <img class="img_me responsive-img" src="https://dummyimage.com/600x400/5c215c/fff" alt="project">
-                    <h4 class="project-title">Project Tiltle</h4>
-                </div>
-                <div id="project2" class="card-reveal hide">
-                    <span class="card-title grey-text text-darken-4">title<i class="material-icons right">close</i></span>
-                    <p class="">info</p>
-                    <a class="waves-effect waves-light btn">Page</a>
-                    <a class="waves-effect waves-light btn">Repo</a>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Freelancer<i class="material-icons right">close</i></span>
+                    <p id="info-freelancer" class=""></p>
+                    <a href="https://gabylutrejo.github.io/freelancer_grid/" class="waves-effect waves-light btn" target="_blank">Page</a>
+                    <a href="https://github.com/gabyLuTrejo/freelancer_grid" class="waves-effect waves-light btn" target="_blank">Code</a>
                 </div>
             </article>
-            <article class="grid-element-wrap col s12 m4">
-                <div data-id="project3" href="#" class="waves-effect project-card">
-                    <img class="img_me responsive-img" src="https://dummyimage.com/600x400/5c215c/fff" alt="project">
-                    <h4 class="project-title">Project Tiltle</h4>
+            <article class="card grid-element-wrap col s12 m4">
+                <div class="card-image waves-effect project-card">
+                    <img class="activator img_me responsive-img" src="img/p2-applove.png" alt="project">
+                    <h4 class="activator project-title">Applove</h4>
                 </div>
-                <div id="project3" class="card-reveal hide">
-                    <span class="card-title grey-text text-darken-4">title<i class="material-icons right">close</i></span>
-                    <p class="">info</p>
-                    <a class="waves-effect waves-light btn">Page</a>
-                    <a class="waves-effect waves-light btn">Repo</a>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Applove<i class="material-icons right">close</i></span>
+                    <p id="info-applove" class=""></p>
+                    <a href="https://gabylutrejo.github.io/applove_grid/" class="waves-effect waves-light btn" target="_blank">Page</a>
+                    <a href="https://github.com/gabyLuTrejo/applove_grid" class="waves-effect waves-light btn" target="_blank">Code</a>
+                </div>
+            </article>
+            <article class="card grid-element-wrap col s12 m4">
+                <div class="card-image waves-effect project-card">
+                    <img class="activator img_me responsive-img" src="img/p3.png" alt="project">
+                    <h4 class="activator project-title">Passeante</h4>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Passeante<i class="material-icons right">close</i></span>
+                    <p id="info-passeante" class=""></p>
+                    <a href="https://www.responsinator.com/?url=https%3A%2F%2Fgabylutrejo.github.io%2Fpasseante%2F" class="waves-effect waves-light btn" target="_blank">Page</a>
+                    <a href="https://github.com/gabyLuTrejo/passeante" class="waves-effect waves-light btn" target="_blank">Code</a>
+                </div>
+            </article>
+        </div>
+        <div class="row">
+            <article class="card grid-element-wrap col s12 m4">
+                <div class="card-image waves-effect project-card">
+                    <img class="activator img_me responsive-img" src="img/p4-daventon.png" alt="project">
+                    <h4 class="activator project-title">d'Aventon</h4>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">d'Aventon<i class="material-icons right">close</i></span>
+                    <p id="info-daventon" class=""></p>
+                    <a href="https://www.responsinator.com/?url=https%3A%2F%2Fgabylutrejo.github.io%2Fd_aventon%2F" class="waves-effect waves-light btn" target="_blank">Page</a>
+                    <a href="https://github.com/gabyLuTrejo/d_aventon" class="waves-effect waves-light btn" target="_blank">Code</a>
+                </div>
+            </article>            
+            <article class="card grid-element-wrap col s12 m4">
+                <div href="#" class="card-image waves-effect project-card">
+                    <img class="activator img_me responsive-img" src="img/p5-tronicake.png" alt="project">
+                    <h4 class="activator project-title">Cup TroniCake</h4>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4">Cup TroniCake<i class="material-icons right">close</i></span>
+                    <p id="info-cuptronic" class=""></p>
+                    <a class="waves-effect waves-light btn right" href="https://www.youtube.com/watch?v=xllBNiJ_Wf8&feature=youtu.be" target="_blank">Video</a>
+                </div>
+            </article>
+            <article class="card grid-element-wrap col s12 m4">
+                <div class="card-image waves-effect project-card">
+                    <img class="activator img_me responsive-img" src="https://dummyimage.com/600x400/5c215c/fff" alt="project">
+                    <h4 id="title-moodle" class="activator project-title"></h4>
+                </div>
+                <div class="card-reveal">
+                    <span class="card-title grey-text text-darken-4"> <span id="title2-moodle"></span><i class="material-icons right">close</i></span>
+                    <p id="info-moodle" class="">info</p>
+                    <a class="waves-effect waves-light btn" target="_blank">Page</a>
+                    <a class="waves-effect waves-light btn" target="_blank">Code</a>
                 </div>
             </article>
         </div>
     </section>
     <section id="contact">
-        <div class="row"></div>
+        <div class="row">
+            <h3 id="title-contact">Get in touch!</h3>
+            <div class="row">
+                <a href="https://github.com/gabyLuTrejo" target="_blank"><img class="col offset-m2 m2 s3 tossing" src="img/github.png"></a>
+                <a target="_blank"><img class="col m2 s3 tossing" src="img/linkedin.png"></a>
+                <img class="col m2 s3 tossing" src="img/mail.png">
+                <img class="col m2 s3 tossing" src="img/phone.png">
+            </div>
+            <div class="row">
+                <h5 id="phrase"></h5>
+            </div>
+        </div>
     </section>
     
     
-    <footer class="page-footer grey darken-3">
+    <footer class="page-footer">
         <div class="footer-copyright valign-wrapper">
             <div class="container center-align">
             © 2017 Gabriela Trejo.

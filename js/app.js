@@ -11,9 +11,14 @@ var cargarPagina = function() {
         event.stopPropagation();
     });
     
-    $(".project-card").click(openCard);
+    $("#basic-skills").on('mouseover',changeImage);
+    $("#basic-skills").on('mouseout', returnImage);
+    $("#intermediate-skills").on('mouseover',changeImage);
+    $("#intermediate-skills").on('mouseout', returnImage);
+    $("#advanced-skills").on('mouseover',changeImage);
+    $("#advanced-skills").on('mouseout', returnImage);
     
-    /*page('/', home);
+/*    page('/', home);
     page('/about', about);
     page('/skills', skills);
     page('/portfolio', portfolio);
@@ -21,14 +26,41 @@ var cargarPagina = function() {
     page();*/
 };
 
-function openCard(){
-    var $idCard = $(this).data("id");
-    $("#"+ $idCard).removeClass("hide");
-}
-
-/*function about(){
+/*var about = function(){
+    $("section").addClass("hide");
     $("#about").removeClass("hide");
 }*/
+
+var changeImage = function(){
+    var level = $(this).data('level');
+    switch(level){
+        case 1:
+            $("#basic").attr("src", "img/basic-1.png");
+        break;
+        case 2:
+            $("#intermediate").attr("src", "img/intermediate-1.png");
+        break;
+        case 3:
+            $("#advanced").attr("src", "img/advanced-1.png");
+        break;
+    }    
+};
+
+var returnImage = function(){
+    var level = $(this).data('level');
+    switch(level){
+        case 1:
+            $("#basic").attr("src", "img/basic.png");
+        break;
+        case 2:
+            $("#intermediate").attr("src", "img/intermediate.png");
+        break;
+        case 3:
+            $("#advanced").attr("src", "img/advanced.png");
+        break;
+    }
+};
+
 
 
 $(document).ready(cargarPagina);

@@ -17,9 +17,10 @@ header nav ul>li.language-conteiner {
 }
 
 nav .brand-logo { padding-left: 2%; }
+nav .logo { width: 30%; }
 
-#home, #about, #skills, #portfolio, #contact {
-        margin-top: 5vh;
+#home{
+    height: 100vh;
 }
 
 .home-section{
@@ -51,16 +52,20 @@ nav .brand-logo { padding-left: 2%; }
 .engineer { left: 0; }
 .vle-design { right: 0; }
 
+#contact-me { display: none; }
+
 /*// MY IMG //*/
 .home-section.img_me {
     display: block;
     margin: 0px;
 }
 
-#basic-skills, #intermediate-skills, #advanced-skills {
-    border: 2px solid green;
-    padding: 5px;
-    height: 35vh;
+#skills {
+    height: 100vh;
+}
+
+#skills .img-visual {
+    max-height: 40vh;
 }
 
 .project-title{
@@ -86,9 +91,63 @@ nav .brand-logo { padding-left: 2%; }
     height: auto;
 }
 
+#about {
+    background-image: url(../img/london.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 100%;
+    height: 100vh;
+    padding-top: 15vh;
+}
+
+#about .frame {
+    border: 1rem;
+    border-radius: 2rem;
+    background-color: rgba(255, 255, 255, 0.45);
+}
+
+#about h5 { line-height: 1.4; }
+
+#portfolio>div >article.card {
+    box-shadow: none;
+}
+
+.card-title + p {
+    color: #000;
+}
+
+#contact {
+    background-image: url(../img/blur.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    min-width: 100%;
+    height: 100vh;
+}
+
+
+#contact {
+        height: 90vh;
+}
+#contact .row { padding-top: 10vh; }
+#contact .row h3 {
+    font-family: 'Chewy';
+    text-align: center;
+    color: darkslategray;
+}
+#contact .row h5 {
+    font-family: 'Handlee';
+    text-align: center;
+    color: darkmagenta;
+    font-weight: 600;
+}
+
+
 footer.page-footer {
+    z-index: 2;
     display: grid;
-    position: fixed;
+    background-color: #424242;
     bottom: 0;
     width: 100%;
     padding: 0;
@@ -97,7 +156,7 @@ footer.page-footer {
 /*///////// RESPONSIVE 992 //////////*/
 @media (max-width: 992px){
     header>nav>div>.brand-logo {
-        left: 20%;
+        left: 40%;
     }
 }
 
@@ -105,26 +164,34 @@ footer.page-footer {
 /*///////// RESPONSIVE 768-tablet //////////*/
 
 @media (max-width : 768px){
-    h4 {
-        font-size: 2rem;
-    }
+    h4 { font-size: 2rem; }
+    #about { background-position: left;}
+    #about h5 { line-height: 1.2; }
 }
 
 /*///////// RESPONSIVE 480-mobile //////////*/
 
 @media (max-width : 480px){
-/*    header { margin-bottom: 15%; }*/
     #nav-desktop{ display: none; }
+    header nav ul>li>.language {
+        display: inline-block;
+        padding: 0;        
+        font-size: large;
+        font-weight: 500;
+    }
+    nav .logo { 
+        width: 95%;
+        margin-top: -8%;
+    }
     #nav-lang-mobile{ 
         display: block;
-        background-color: transparent;
+        background-color: rgba(158, 208, 190, 0.94);
         color: blueviolet;
         box-shadow: 0 0 0;
-        padding-left: 5%;
+        padding: 0 0 12vh 5%;
         z-index: 35;
     }
-    #nav-mobile{ display: block; z-index: 35;}
-    .home-section { margin-top: 20vh; }
+    #nav-mobile{ display: block; z-index: 35; }
       
     html{
         box-sizing: border-box;
@@ -321,5 +388,27 @@ footer.page-footer {
         transform: translateY(0);
     }
     
+    #contact-me { display: block; }
     .engineer, .vle-design, .coder-content { display: none;}
+    
+    #about {
+        background-position: right;
+        padding-top: 25vh;
+        color: black;
+    }
+    #about .frame { background-color: rgba(255, 255, 255, 0.66) }
+    .frame h3{ font-size: 2.4rem; }
+    .frame h5{ font-size: 1.4rem; line-height: 2.5rem; }
+    
+    .col img.img_me {
+        margin-top: 10vh;
+    }
+    #contact {
+        height: 80vh;
+    }
+    #contact .row h3 {
+        font-size: 2.2rem;
+    }
+    footer.page-footer { background-color: rgb(136, 195, 174); }
+    .page-footer .footer-copyright { font-size: large; }
 }

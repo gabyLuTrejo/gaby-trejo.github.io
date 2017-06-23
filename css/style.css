@@ -17,10 +17,10 @@ header nav ul>li.language-conteiner {
 }
 
 nav .brand-logo { padding-left: 2%; }
-nav .logo { width: 30%; }
+nav .logo { width: 40%; }
 
 #home{
-    height: 100vh;
+/*    height: 100vh;*/
 }
 
 .home-section{
@@ -97,7 +97,7 @@ nav .logo { width: 30%; }
     background-position: center;
     background-size: cover;
     min-width: 100%;
-    height: 100vh;
+    height: 90vh;
     padding-top: 15vh;
 }
 
@@ -180,8 +180,8 @@ footer.page-footer {
         font-weight: 500;
     }
     nav .logo { 
-        width: 95%;
-        margin-top: -8%;
+        width: 45%;
+        margin-left: 20%;
     }
     #nav-lang-mobile{ 
         display: block;
@@ -387,18 +387,21 @@ footer.page-footer {
     .button:hover:before{
         transform: translateY(0);
     }
-    
+    #home{ height: 77vh; }
     #contact-me { display: block; }
     .engineer, .vle-design, .coder-content { display: none;}
     
     #about {
         background-position: right;
-        padding-top: 25vh;
+        padding-top: 12vh;
         color: black;
+        height: 77vh;
     }
     #about .frame { background-color: rgba(255, 255, 255, 0.66) }
     .frame h3{ font-size: 2.4rem; }
     .frame h5{ font-size: 1.4rem; line-height: 2.5rem; }
+    
+    #skills{ padding-top: 6vh; }
     
     .col img.img_me {
         margin-top: 10vh;

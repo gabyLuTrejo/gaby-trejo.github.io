@@ -3,7 +3,8 @@ var cargarPagina = function() {
         $(this).addClass('oppenned');
         event.stopPropagation();
     });
-    $(document).delegate('body', 'click', function(event) {
+    $(document).delegate('.close-menu', 'click', function(event) {
+        event.stopPropagation();
         $('.open').removeClass('oppenned');
     });
     $(document).delegate('.cls', 'click', function(event){
@@ -18,18 +19,34 @@ var cargarPagina = function() {
     $("#advanced-skills").on('mouseover',changeImage);
     $("#advanced-skills").on('mouseout', returnImage);
     
-/*    page('/', home);
+    page('/', home);
     page('/about', about);
     page('/skills', skills);
     page('/portfolio', portfolio);
     page('/contact', contact);
-    page();*/
+    page();
 };
 
-/*var about = function(){
+var home = function(){
+    $("section").addClass("hide");
+    $("#home").removeClass("hide");
+}
+var about = function(){
     $("section").addClass("hide");
     $("#about").removeClass("hide");
-}*/
+}
+var skills = function(){
+    $("section").addClass("hide");
+    $("#skills").removeClass("hide");
+}
+var portfolio = function(){
+    $("section").addClass("hide");
+    $("#portfolio").removeClass("hide");
+}
+var contact = function(){
+    $("section").addClass("hide");
+    $("#contact").removeClass("hide");
+}
 
 var changeImage = function(){
     var level = $(this).data('level');

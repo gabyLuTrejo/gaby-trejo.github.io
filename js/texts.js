@@ -86,6 +86,10 @@ var texts = [
     key: "content-coder"
   },
   {
+    id: "contact-me",
+    key: "title-contact"
+  },
+  {
     id: "content-vle",
     key: "content-vle"
   },

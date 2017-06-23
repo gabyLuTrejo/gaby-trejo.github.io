@@ -20,8 +20,6 @@ nav .brand-logo { padding-left: 2%; }
 nav .logo { width: 30%; }
 
 #home{
-/*, #about, #skills, #portfolio, #contact {*/
-/*    margin-top: 5vh;*/
     height: 100vh;
 }
 
@@ -53,6 +51,8 @@ nav .logo { width: 30%; }
 
 .engineer { left: 0; }
 .vle-design { right: 0; }
+
+#contact-me { display: none; }
 
 /*// MY IMG //*/
 .home-section.img_me {
@@ -126,10 +126,28 @@ nav .logo { width: 30%; }
     height: 100vh;
 }
 
+
+#contact {
+        height: 90vh;
+}
+#contact .row { padding-top: 10vh; }
+#contact .row h3 {
+    font-family: 'Chewy';
+    text-align: center;
+    color: darkslategray;
+}
+#contact .row h5 {
+    font-family: 'Handlee';
+    text-align: center;
+    color: darkmagenta;
+    font-weight: 600;
+}
+
+
 footer.page-footer {
     z-index: 2;
     display: grid;
-/*    position: fixed;*/
+    background-color: #424242;
     bottom: 0;
     width: 100%;
     padding: 0;
@@ -154,21 +172,26 @@ footer.page-footer {
 /*///////// RESPONSIVE 480-mobile //////////*/
 
 @media (max-width : 480px){
-/*    header { margin-bottom: 15%; }*/
     #nav-desktop{ display: none; }
+    header nav ul>li>.language {
+        display: inline-block;
+        padding: 0;        
+        font-size: large;
+        font-weight: 500;
+    }
     nav .logo { 
         width: 95%;
-        margin-top: -5%;
+        margin-top: -8%;
     }
     #nav-lang-mobile{ 
         display: block;
-        background-color: transparent;
+        background-color: rgba(158, 208, 190, 0.94);
         color: blueviolet;
         box-shadow: 0 0 0;
-        padding-left: 5%;
+        padding: 0 0 12vh 5%;
         z-index: 35;
     }
-    #nav-mobile{ display: block; z-index: 35;}
+    #nav-mobile{ display: block; z-index: 35; }
       
     html{
         box-sizing: border-box;
@@ -365,6 +388,7 @@ footer.page-footer {
         transform: translateY(0);
     }
     
+    #contact-me { display: block; }
     .engineer, .vle-design, .coder-content { display: none;}
     
     #about {
@@ -375,4 +399,16 @@ footer.page-footer {
     #about .frame { background-color: rgba(255, 255, 255, 0.66) }
     .frame h3{ font-size: 2.4rem; }
     .frame h5{ font-size: 1.4rem; line-height: 2.5rem; }
+    
+    .col img.img_me {
+        margin-top: 10vh;
+    }
+    #contact {
+        height: 80vh;
+    }
+    #contact .row h3 {
+        font-size: 2.2rem;
+    }
+    footer.page-footer { background-color: rgb(136, 195, 174); }
+    .page-footer .footer-copyright { font-size: large; }
 }

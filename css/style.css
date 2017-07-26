@@ -1,8 +1,20 @@
+/*/////// Colors ///////*/
+/* git #27464b */
+/* linked #005f86 */
+/* mail #175b67 */
+/* phone #4f5d74 */
 /*///////// Desktop //////////*/
+
+html{
+    width: 100%;
+    height: 100vh;
+}
 
 #nav-lang-mobile{ display: none; }
 #nav-mobile{ display: none; }
 
+header{ font-family: Handlee; }
+header nav .rgb-git{ background-color: #27464b; }
 header nav ul>li>.language {
     display: inline-block;
     padding: 0;
@@ -41,18 +53,25 @@ nav .logo { width: 40%; }
 
 .engineer>a, .coder-content>a, .vle-design>a {
     text-decoration: none;
+    font-family: Chewy;
     color: #000;
 }
 
 .engineer>p, .coder-content>p, .vle-design>p {
     text-align: justify;
+    font-family: Handlee;
+/*    font-weight: 600;*/
+    font-size: larger;
     padding: 0 5%;
 }
 
 .engineer { left: 0; }
 .vle-design { right: 0; }
+img.img_me { display: none; }
+div img.width-60 { width: 60%; }
+a img.width-20 { width: 20%; }
 
-#contact-me { display: none; }
+#cv-download { display: none; }
 
 /*// MY IMG //*/
 .home-section.img_me {
@@ -68,6 +87,11 @@ nav .logo { width: 40%; }
     max-height: 40vh;
 }
 
+#title-skills, #title-project {
+    font-family: Chewy;
+    font-size: -webkit-xxx-large;
+    color: #005f86;
+}
 .project-title{
     position: absolute;
     bottom: 0;
@@ -76,7 +100,7 @@ nav .logo { width: 40%; }
     margin: 0;
     line-height: 2.8rem;
     padding: 0 10px;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(23,91,103,0.7);
     width: 100%;
     color: #fff;
     white-space: nowrap;
@@ -104,10 +128,17 @@ nav .logo { width: 40%; }
 #about .frame {
     border: 1rem;
     border-radius: 2rem;
-    background-color: rgba(255, 255, 255, 0.45);
+    background-color: rgba(255, 255, 255, 0.79);
 }
 
-#about h5 { line-height: 1.4; }
+#about h3 { 
+    font-family: Handlee;
+    font-weight: 600; 
+}
+#about h5 { 
+    font-family: Handlee;
+    line-height: 1.4; 
+}
 
 #portfolio>div >article.card {
     box-shadow: none;
@@ -115,6 +146,24 @@ nav .logo { width: 40%; }
 
 .card-title + p {
     color: #000;
+}
+.btn{
+    font-family: 'Chewy';
+    font-size: large;
+}
+.btn-page{
+    background-color: #27464b;
+}
+.btn-code{
+    background-color: #175b67;
+}
+
+#portfolio h4.project-title, #portfolio .card-reveal span { 
+    font-family: Handlee;
+    font-weight: 600; 
+}
+#portfolio p { 
+    font-family: Handlee;
 }
 
 #contact {
@@ -139,15 +188,19 @@ nav .logo { width: 40%; }
 #contact .row h5 {
     font-family: 'Handlee';
     text-align: center;
-    color: darkmagenta;
+    color: #175b67;
     font-weight: 600;
 }
 
+.page-footer .footer-copyright {
+    color: #fff;
+    font-family: Handlee;
+}
 
 footer.page-footer {
     z-index: 2;
     display: grid;
-    background-color: #424242;
+    background-color: #27464b;
     bottom: 0;
     width: 100%;
     padding: 0;
@@ -185,13 +238,14 @@ footer.page-footer {
     }
     #nav-lang-mobile{ 
         display: block;
-        background-color: rgba(158, 208, 190, 0.94);
-        color: blueviolet;
+        background-color: rgba(39, 70, 75, 0.94);
+        color: #9ac3d4;
         box-shadow: 0 0 0;
         padding: 0 0 12vh 5%;
         z-index: 35;
     }
     #nav-mobile{ display: block; z-index: 35; }
+    #nav-mobile span.blue-light{ background-color: #9ac3d4; }
       
     html{
         box-sizing: border-box;
@@ -203,15 +257,10 @@ footer.page-footer {
         color: #333;
         text-decoration: none;
     }
-    html{
-        width: 100%;
-        height: 100%;
-    }
+    
     body{
-        background: rgba(132, 119, 152, 0.48);;
         width: 100%;
         height: 100%;
-        font-family: Arial, Helvetica, sans-serif;
         color: #fff;        
     }
     h1{
@@ -268,7 +317,7 @@ footer.page-footer {
         right: 0;
         top: 0;
         position: absolute;
-        background-color: rgba(75, 38, 133, 0.86);
+        background-color: #27464b;
         border-radius: 50%;
         z-index: 25;
         overflow: hidden;
@@ -303,8 +352,7 @@ footer.page-footer {
     }
     .sub-menu li a{
         color: #fff;
-        font-family: 'Lato', Arial, Helvetica, sans-serif;
-        font-size: 16px;
+        font-size: 21px;
         width: 100%;
         display: block;
         float: left;
@@ -313,8 +361,8 @@ footer.page-footer {
 
     .oppenned .sub-menu{
         opacity: 1;
-        height: 400px;
-        width: 400px;
+        height: 390px;
+        width: 370px;
     }
     .oppenned span:nth-child(2){
         overflow: visible;
@@ -327,8 +375,8 @@ footer.page-footer {
         transform: rotate(45deg) translateY(12px) translateX(12px);
     }
     .oppenned span:nth-child(2){
-        height: 400px;
-        width: 400px;
+        height: 390px;
+        width: 380px;
         right: -160px;
         top: -160px;
         border-radius: 50%;
@@ -405,6 +453,7 @@ footer.page-footer {
     
     .col img.img_me {
         margin-top: 10vh;
+        display: block;
     }
     #contact {
         height: 80vh;
@@ -412,6 +461,6 @@ footer.page-footer {
     #contact .row h3 {
         font-size: 2.2rem;
     }
-    footer.page-footer { background-color: rgb(136, 195, 174); }
+    footer.page-footer { background-color: rgba(39, 70, 75, 0.94); }
     .page-footer .footer-copyright { font-size: large; }
 }

@@ -161,7 +161,11 @@ a img.width-20 { width: 20%; }
 
 #portfolio h4.project-title, #portfolio .card-reveal span { 
     font-family: Handlee;
-    font-weight: 600; 
+    font-weight: 600;
+    font-size: large;
+}
+#portfolio .card .card-content {
+    padding: 10px;
 }
 #portfolio p { 
     font-family: Handlee;

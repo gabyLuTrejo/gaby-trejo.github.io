@@ -440,7 +440,8 @@ footer.page-footer {
     .button:hover:before{
         transform: translateY(0);
     }
-    #home{ height: 70vh; }
+    #home{ height: 74vh; }
+    .home-section{ margin-top: 5vh; }
     #cv-download { display: block; }
     a img.width-30 { width: 30%; }
     .engineer, .vle-design, .coder-content { display: none;}
@@ -462,8 +463,8 @@ footer.page-footer {
         display: block;
     }
     #contact { 
-        height: 86.29vh;
-        padding-top: 12vh;
+        height: 90vh;
+        padding-top: 10vh;
     }
     #contact .row { padding-top: 3vh; }
     #contact .row h3 {

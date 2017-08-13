@@ -38,6 +38,7 @@ nav .logo { width: 40%; }
 .home-section{
     width: 100%;
     position: relative;
+    margin-top: 7.3vh;
 }
 
 .home-section.engineer, .home-section.coder, .home-section.vle-design {
@@ -51,7 +52,7 @@ nav .logo { width: 40%; }
     bottom: 0;
 }
 
-.engineer>a, .coder-content>a, .vle-design>a {
+.engineer>h4, .coder-content>h4, .vle-design>h4 {
     text-decoration: none;
     font-family: Chewy;
     color: #000;
@@ -69,7 +70,7 @@ nav .logo { width: 40%; }
 .vle-design { right: 0; }
 img.img_me { display: none; }
 div img.width-60 { width: 60%; }
-a img.width-20 { width: 20%; }
+a img.width-40 { width: 40%; }
 
 #cv-download { display: none; }
 
@@ -84,7 +85,7 @@ a img.width-20 { width: 20%; }
 }
 
 #skills .img-visual {
-    max-height: 40vh;
+    max-height: 45vh;
 }
 
 #title-skills, #title-project {
@@ -121,7 +122,7 @@ a img.width-20 { width: 20%; }
     background-position: center;
     background-size: cover;
     min-width: 100%;
-    height: 90vh;
+    height: 80.6vh;
     padding-top: 15vh;
 }
 
@@ -160,7 +161,11 @@ a img.width-20 { width: 20%; }
 
 #portfolio h4.project-title, #portfolio .card-reveal span { 
     font-family: Handlee;
-    font-weight: 600; 
+    font-weight: 600;
+    font-size: large;
+}
+#portfolio .card .card-content {
+    padding: 10px;
 }
 #portfolio p { 
     font-family: Handlee;
@@ -172,12 +177,12 @@ a img.width-20 { width: 20%; }
     background-position: bottom;
     background-size: cover;
     min-width: 100%;
-    height: 100vh;
 }
 
 
 #contact {
-        height: 90vh;
+    height: 90vh;
+    margin-top: -9.4vh;
 }
 #contact .row { padding-top: 10vh; }
 #contact .row h3 {
@@ -435,8 +440,9 @@ footer.page-footer {
     .button:hover:before{
         transform: translateY(0);
     }
-    #home{ height: 77vh; }
-    #contact-me { display: block; }
+    #home{ height: 70vh; }
+    #cv-download { display: block; }
+    a img.width-30 { width: 30%; }
     .engineer, .vle-design, .coder-content { display: none;}
     
     #about {
@@ -452,12 +458,14 @@ footer.page-footer {
     #skills{ padding-top: 6vh; }
     
     .col img.img_me {
-        margin-top: 10vh;
+        margin-top: 3vh;
         display: block;
     }
-    #contact {
-        height: 80vh;
+    #contact { 
+        height: 86.29vh;
+        padding-top: 12vh;
     }
+    #contact .row { padding-top: 3vh; }
     #contact .row h3 {
         font-size: 2.2rem;
     }

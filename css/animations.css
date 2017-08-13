@@ -777,8 +777,8 @@ floating
 	animation-name: floating;
 	-webkit-animation-name: floating;
 
-	animation-duration: 1.5s;	
-	-webkit-animation-duration: 1.5s;
+	animation-duration: 2.8s;	
+	-webkit-animation-duration: 2.8s;
 
 	animation-iteration-count: infinite;
 	-webkit-animation-iteration-count: infinite;
@@ -789,7 +789,7 @@ floating
 		transform: translateY(0%);	
 	}
 	50% {
-		transform: translateY(8%);	
+		transform: translateY(5%);	
 	}	
 	100% {
 		transform: translateY(0%);
@@ -801,7 +801,7 @@ floating
 		-webkit-transform: translateY(0%);	
 	}
 	50% {
-		-webkit-transform: translateY(8%);	
+		-webkit-transform: translateY(5%);	
 	}	
 	100% {
 		-webkit-transform: translateY(0%);
@@ -827,25 +827,25 @@ tossing
 
 @keyframes tossing {
 	0% {
-		transform: rotate(-4deg);	
+		transform: rotate(-3deg);	
 	}
 	50% {
-		transform: rotate(4deg);
+		transform: rotate(3deg);
 	}
 	100% {
-		transform: rotate(-4deg);	
+		transform: rotate(-3deg);	
 	}						
 }
 
 @-webkit-keyframes tossing {
 	0% {
-		-webkit-transform: rotate(-4deg);	
+		-webkit-transform: rotate(-3deg);	
 	}
 	50% {
-		-webkit-transform: rotate(4deg);
+		-webkit-transform: rotate(3deg);
 	}
 	100% {
-		-webkit-transform: rotate(-4deg);	
+		-webkit-transform: rotate(-3deg);	
 	}				
 }
 
@@ -1123,4 +1123,27 @@ stretchRight
 	100% {
 		-webkit-transform: scaleX(1);
 	}		
+}
+
+/*  
+==============================================
+sink
+==============================================
+*/
+
+.sink {
+  display: inline-block;
+  -webkit-transform: perspective(2px) translateZ(0);
+  transform: perspective(2px) translateZ(0);
+  box-shadow: 0 0 2px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.sink:hover {
+  -webkit-transform: translateY(15px);
+  transform: translateY(15px);
 }

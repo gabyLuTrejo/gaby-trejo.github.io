@@ -440,8 +440,9 @@ footer.page-footer {
     .button:hover:before{
         transform: translateY(0);
     }
-    #home{ height: 77vh; }
+    #home{ height: 70vh; }
     #cv-download { display: block; }
+    a img.width-30 { width: 30%; }
     .engineer, .vle-design, .coder-content { display: none;}
     
     #about {
@@ -457,7 +458,7 @@ footer.page-footer {
     #skills{ padding-top: 6vh; }
     
     .col img.img_me {
-        margin-top: 10vh;
+        margin-top: 3vh;
         display: block;
     }
     #contact { 

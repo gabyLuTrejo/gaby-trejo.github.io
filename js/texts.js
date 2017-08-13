@@ -8,7 +8,6 @@ var translations = {
       "title-vle": "Desarrolladora AVOA",      
       "content-ing": "Para mi la ingeniería es un medio para ayudar y resolver problemas.",
       "content-coder": "Programadora Front End Junior enfocada en funcionalidad, claridad y buen diseño.",
-      "cv-download":"Descarga mi CV",
       "content-vle": "Ambientes Virtuales y Objetos de Aprendizaje enfocados a la educación continua y cursos en línea.",
       "title-about": "¡Hola, Soy Gaby!",
       "content-about": "Soy amante de los deportes principalmente los acuáticos, aficionada de la lectura e interesada en las historias de esos lugares que no siempre aparecen en el mapa.",
@@ -34,7 +33,6 @@ var translations = {
       "title-vle": "VLE Developer",
       "content-ing": "For me engineering is a means to help and solve problems.",
       "content-coder": "Junior Front-end Developer who focuses on functionality, clean writing and good design.",
-      "cv-download":"Download my CV",
       "content-vle": "Virtual Learning Environments  and Learning Objects developer (e-learning).",
       "title-about": "Hi, I am Gaby!",
       "content-about": "I am a lover of sports, mainly aquatic, I am fond of reading and interested in the stories of those places that do not always appear on the map.",
@@ -94,10 +92,6 @@ var texts = [
   {
     id: "content-coder",
     key: "content-coder"
-  },
-  {
-    id: "cv-download",
-    key: "cv-download"
   },
   {
     id: "content-vle",
